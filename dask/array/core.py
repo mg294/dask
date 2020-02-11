@@ -831,7 +831,8 @@ def store(
 
     >>> import h5py  # doctest: +SKIP
     >>> f = h5py.File('myfile.hdf5', mode='a')  # doctest: +SKIP
-    >>> d = f.require_dataset('/data', shape=x.shape, dtype=x.dtype)
+    >>> d = f.require_dataset('/data', shape=x.shape,
+                              dtype=x.dtype)  # doctest: +SKIP
     >>> store(x, d)  # doctest: +SKIP
 
     Alternatively store many arrays at the same time
